@@ -1,0 +1,310 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho Ajustado para Celular */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #d4af37;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d4af37;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.logo i {
+    color: #d4af37;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* Seção Principal (Banner) */
+.hero {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), url('marlon-2.jpg') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+    letter-spacing: 0.5px;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #cccccc;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Botões Proporcionais (Não gigantes) */
+.btn {
+    background-color: #d4af37;
+    color: #121212;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #f3c643;
+    transform: translateY(-2px);
+}
+
+/* Seção Clube de Cortes com a Imagem Única */
+.club-highlight {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #181818 0%, #0d0d0d 100%);
+    text-align: center;
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+}
+
+.club-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #d4af37;
+}
+
+.club-highlight h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 15px 0 10px;
+}
+
+.club-subtitle {
+    font-size: 15px;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.club-flyer-box {
+    background-color: #1a1a1a;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+    margin-bottom: 30px;
+}
+
+.flyer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.club-cta {
+    margin-top: 15px;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #121212;
+    font-size: 15px;
+    padding: 14px 28px;
+}
+
+/* Seção Sobre */
+.about {
+    padding: 70px 20px;
+    background: linear-gradient(rgba(22,22,22,0.92), rgba(22,22,22,0.92)), url('marlon-1.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 15px;
+    color: #d0d0d0;
+    line-height: 1.7;
+}
+
+/* Seção Serviços Avulsos */
+.services {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #d4af37;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-box {
+    background-color: #1b1b1b;
+    border: 1px solid #2a2a2a;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.service-box h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.service-box p {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.price {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0d0d0d;
+    color: #888888;
+    border-top: 1px solid #222;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    color: #d4af37;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer-content p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-icon {
+    background-color: #1f1f1f;
+    color: #d4af37;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d4af37;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+.copy {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 15px;
+}
